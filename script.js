@@ -20,9 +20,9 @@ function playGame(playerMove) {
   updateScore();
 
   const imageMap = {
-    Rock: 'rock.png',
-    Paper: 'paper.jpg',
-    Scissors: 'scissors.png'
+    Rock: 'images/rock.png',
+    Paper: 'images/paper.jpg',
+    Scissors: 'images/scissors.png'
   };
 
   const resultBox = document.querySelector('.js-result');
@@ -62,6 +62,5 @@ function resetGame() {
   updateScore();
   document.querySelector('.js-result').innerHTML = '';
   document.querySelector('.js-moves').innerHTML = '';
-  // Reset game-container background color to default
   document.querySelector('.game-container').style.backgroundColor = '#fff';
 }
